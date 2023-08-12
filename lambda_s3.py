@@ -7,7 +7,7 @@ s3_client = boto3.client('s3')
 def lambda_handler(event, context):
     print('Received Kinesis records:', json.dumps(event, indent=2))
     
-    s3_bucket = 'aa-glue-files-mp' # Adjust the S3 bucket as needed
+    s3_bucket = 'S3 Bucket Name' # Adjust the S3 bucket as needed
     s3_key = 'kinesis-records/all_records.txt'  # Adjust the S3 key as needed
 
     combined_payloads = ""
