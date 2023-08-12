@@ -3,7 +3,7 @@ import boto3
 import time
 from data_generator import make_employee
 
-stream_name = 'test'
+stream_name = 'test' # Kinesis Data Stream Name
 
 
 def main():
